@@ -1,0 +1,75 @@
+html, body {
+  color: black;
+  background-color: white;
+  font-family: "Raleway", Arial,Helvetica;
+  font-size: 12pt;
+  margin: 0px;
+  }
+
+
+.header{
+  padding: 60px;
+  text-align: center;
+  color: white;
+  background-color: #333;
+}
+
+.box{
+  background: white;
+  position: relative;
+  animation-name: myanimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.about-title{
+  padding-left: 10px;
+  padding-top: 0.1px;
+  padding-bottom: 0.1px;
+  background-color: #001a33;
+  color: #ffffff;
+}
+
+.project-title{
+  padding-left: 10px;
+  padding-top: 0.5px;
+  padding-bottom: 0.5px;
+  background-color: #001a33;
+  color: #ffffff;
+}
+
+.contact-title{
+  padding-left: 10px;
+  padding-top: 0.5px;
+  padding-bottom: 0.5px;
+  background-color: #001a33;
+  color: #ffffff;
+}
+
+#about p{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#projects p{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.btn{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border: white 1px solid;
+  margin-top: 40px;
+}
+
+
+@keyframes myanimation {
+  0%{background-color: white;}
+  25%{background-color: red;}
+  50%{background-color: green;}
+  75%{background-color: blue;}
+  100%{background-color: white;}
+}
