@@ -1,11 +1,28 @@
 html, body {
-  color: black;
-  background-color: white;
-  font-family: "Raleway", Arial,Helvetica;
-  font-size: 12pt;
-  margin: 0px;
-  }
+  background-color:black;
+  margin:0;
+  padding:0;
+  position:
+  relative;
+  font-size:15px;
+  font-family: 'futura-pt', sans-serif;
+  color:#fff;
+  height: 100%;
+}
 
+body,p,h1,h2,h3,h4,h5,h6,a{
+  font-family: 'futura-pt', sans-serif;
+  color:#fff;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+  outline: none;
+}
+
+body {
+  color:#fff;
+  overflow-x:hidden;
+}
 
 .header{
   padding: 60px;
@@ -56,6 +73,15 @@ html, body {
   padding-right: 10px;
 }
 
+#home {
+	position: absolute;
+	top: 37%;
+	width: 100%;
+	text-align: center;
+	z-index: 100;
+	display:block;
+}
+
 .btn{
   display: inline-block;
   color: white;
@@ -63,13 +89,4 @@ html, body {
   padding: 1rem 2rem;
   border: white 1px solid;
   margin-top: 40px;
-}
-
-
-@keyframes myanimation {
-  0%{background-color: white;}
-  25%{background-color: red;}
-  50%{background-color: green;}
-  75%{background-color: blue;}
-  100%{background-color: white;}
 }

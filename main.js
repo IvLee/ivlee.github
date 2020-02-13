@@ -1,13 +1,15 @@
 var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
-var innerColor = 0x27F8D8;
-
-var renderer = new THREE.WebGLRenderer({ antialias: true });
+var canvas= document.getElementById("webCanvas");
+var renderer = new THREE.WebGLRenderer({
+  canvas: canvas,
+  antialias: true });
 renderer.setClearColor( 0x000000, 0 ); // background
 renderer.setSize( window.innerWidth, window.innerHeight );
-document.body.appendChild( renderer.domElement );
+//document.body.appendChild( renderer.domElement );
 
+var innerColor = 0x27F8D8;
 var light = new THREE.AmbientLight( 0x404040 ); // soft white light
 scene.add( light );
 

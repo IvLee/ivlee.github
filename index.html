@@ -3,28 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="mobile-web-app-capable" content="yes"/>
   <meta name="description" content="">
   <meta name="author" content="Ivan Lee">
-  <link rel="stylesheet" href="Ivan's Website.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/wvh2fzc.css">
+  <link rel="stylesheet" href="css/aos.css" />
   <title>Ivan's Website</title>
+
+  <script src="three.min.js"></script>
 
 </head>
 
 <body>
-  <!--<canvas id="homeCanvas" width=window.innerWidth height=window.innerHeight></canvas>-->
-  <script src="three.min.js"></script>
-  <script src="canvas.js"></script>
+  <div class="background" id="background"></div>
+	<canvas id="webCanvas"></canvas>
+  <script src="main.js"></script>
   <div id = "container">
-    <header class="header">
-      <div>
+    <div id="home">
       <h1>"Let the future tell the truth, and evaluate each one according to his work and accomplishments."</h1>
-      -Nikola Tesla
+      <h2>-Nikola Tesla</h2>
       <!-- <h1>"Everybody is a genius. But if you judge a fish by its ability to climb a tree it will live its whole life believing that it is stupid"</h1>
       -Albert Einstein -->
+    <!--<a href="#about" class="btn">Read More</a>-->
     </div>
-    <a href="#about" class="btn">Read More</a>
-    </header>
     <main>
       <section id="about">
         <div class="about-title">
@@ -55,6 +59,7 @@
           <li><a href="https://github.com/IvLee">Github</a></li>
           <li><a href="https://www.linkedin.com/in/ivlee/">linkedin</a></li>
         </ul>
+      </div>
     </footer>
   </div>
 </body>
